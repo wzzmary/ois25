@@ -1,8 +1,8 @@
-# 🌟 On charge les packages nécessaires
+# Voici les packages 
 library(ggplot2)
 library(dplyr)
 
-# 🎲 Génération de données simulées avec des groupes
+# Voila mes données fictives
 set.seed(123)
 data <- data.frame(
   x = rnorm(300),
@@ -10,7 +10,7 @@ data <- data.frame(
   group = sample(c("Groupe A", "Groupe B", "Groupe C"), 300, replace = TRUE)
 )
 
-# 🌈 Visualisation améliorée avec dégradé, transparence, formes et titre stylé
+
 ggplot(data, aes(x = x, y = y, color = group, shape = group)) +
   geom_point(size = 4, alpha = 0.8) +
   labs(
